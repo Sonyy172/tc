@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Texas</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -12,16 +12,16 @@
     
     
     /* Remove the jumbotron's default bottom margin */ 
-     .jumbotron {
-          height: 380px;
-          margin-bottom: 0;
-          background-image: url(img/background.jpg);
-          background-size: 100% 100%;
-          background-color: white;
-          position: relative;
-          padding-top: 20px!important;
+    .jumbotron {
+      
+      margin-bottom: 0;
+      background-image: url(img/background.jpg);
+      background-size: 100% 100%;
+      background-color: white;
+      position: relative;
+      padding-top: 20px!important;
     }
-   
+
     /* Add a gray background color and some padding to the footer */
     footer {
       background-color: #f2f2f2;
@@ -31,11 +31,9 @@
     	width: 1260px;
     }
     
-    .img-icon{
-          position: absolute;
-          left: 50%;
-          transform: translateX(-47%);
-          bottom: -16px;
+    .img-icon img{
+      margin:0 auto;
+      width: 70%;
     }
     .img-cointaner{
       position: relative;
@@ -45,80 +43,222 @@
     }
     .tx-menu p {
 
-  font-size: 28.394px;
-  font-family: "UTM Avo";
-  color: rgb(255, 254, 254);
-  line-height: 1.2;
+      font-size: 28.394px;
+      font-family: "UTM Avo";
+      color: rgb(255, 254, 254);
+      line-height: 1.2;
 
+    }
+    .tx-hotline h2{
+
+      font-size: 23.333px;
+      font-family: "UTM Avo";
+      color: #262626;
+      line-height: 1.2;
+      text-align: left;
+
+    }
+    .tx-hotline a ,.tx-hotline p{
+
+      font-size: 23.333px;
+      font-family: "UTM Avo";
+      color: #bababa;
+      line-height: 1.2;
+      text-align: left;
+
+    }
+    .tx-thanhvien h2{
+
+      font-family: "UTM Avo";
+
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1.2;
+      font-size: 23.333px;
+      font-family: "UTM Avo";
+      color: #4e4e4e;
+      line-height: 1.2;
+      text-align: left;
+
+    }
+    .tx-thanhvien a ,.tx-thanhvien p{
+
+      font-size: 23.333px;
+      font-family: "UTM Avo";
+      color: #bababa;
+      line-height: 1.2;
+      text-align: left;
+
+    }
+
+    
+
+    .avatar{
+      border-style: solid;
+      border-width: 2px;
+      border-color: rgb(255, 255, 255);
+      border-radius: 50%;
+      background-color: rgb(168, 167, 163);
+      box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+      width: 40px;
+      height: 39px;
+      display: inline-block;
+      margin-right: 6px;
+      margin-bottom: 6px;
+    }
+
+
+ 
+
+
+@media (min-width: 576px) { ... }
+
+
+@media (min-width: 768px) { .tx-hotline{
+      padding-top: 65px;
+    }
+    .tx-thanhvien{
+      padding-top: 65px;
+    }
+  .jumbotron {
+      height: 440px;}
+ .info{
+    position: relative;
+  }
+  .tx-hotline{
+      position: absolute;
+      left: 0px;
+
+  } 
+  .tx-thanhvien{
+      position: absolute;
+      right:  0px;
+    }
+ .tx-login{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+ } }
+
+
+@media only screen and (min-width : 1200px) { .tx-hotline{
+      padding-top: 65px;
+    }
+    .tx-thanhvien{
+      padding-top: 65px;
+    }
+  .jumbotron {
+      height: 590px;}
+ .info{
+    position: relative;
+  }
+  .tx-hotline{
+      position: absolute;
+      left: 0px;
+
+  } 
+  .tx-thanhvien{
+      position: absolute;
+      right:  0px;
+    }
+ .tx-login{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+ } }
+
+
+@media only screen and (min-width : 992px) { 
+  .tx-hotline{
+      padding-top: 65px;
+    }
+    .tx-thanhvien{
+      padding-top: 65px;
+    }
+  .jumbotron {
+      height: 590px;}
+ .info{
+    position: relative;
+  }
+  .tx-hotline{
+      position: absolute;
+      left: 0px;
+
+  } 
+  .tx-thanhvien{
+      position: absolute;
+      right:  0px;
+    }
+ .tx-login{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+ } 
 }
-.tx-hotline h2{
-
-  font-size: 23.333px;
-  font-family: "UTM Avo";
-  color: #262626;
-  line-height: 1.2;
-  text-align: left;
-  
-}
-.tx-hotline a ,.tx-hotline p{
-
-  font-size: 23.333px;
-  font-family: "UTM Avo";
-  color: #bababa;
-  line-height: 1.2;
-  text-align: left;
-  
-}
-
-.tx-hotline{
-  padding-top: 65px;
-}
 
 
 
 
-  </style>
+ 
+</style>
 
 </head>
 <body>
 
-<div class="jumbotron">
-  <div class="container text-center ">
-    <div class="row tx-menu">
-        <div class="col-sm-5"> <p style="padding-left: 190px"> Trang chủ </p></div>
-        <div class="col-sm-2"> <img src="img/logo.png" class="img-responsive" style="width:110px;" alt="Image"></div>
-        <div class="col-sm-3"> <p> Texas Việt Nam </p></div>
+  <div class="jumbotron">
+    <div class="container text-center ">
+      <div class="row tx-menu">
+        <div class="col-sm-5"> <p style=""> Trang chủ </p></div>
+        <div class="col-sm-2"> <img src="img/logo.png" class="img-responsive" style="width:110px; margin: 0 auto;" alt="Image"></div>
+        <div class="col-sm-5"> <p> Texas Việt Nam </p></div>
+        
+      </div>
     </div>
+    <div class="container text-center ">
+      <div class="row ">
 
-    <div class="img-icon"><img src="img/icon.png" class="img-responsive" style="width:80%" alt="Image"></div>
-  </div>
-</div>
-
-
-
-<div class="container">    
-  <div class="row">
-    <div class="col-sm-3 tx-hotline">
-      
-      <h2>Hotline : 08 3547 2468</h2>
-      <p>email: user@texas.vn</p>
-      <a href="ww.texas.vn">ww.texas.vn</a>
-      <div><img src="img/daugach.png" class="img-responsive" style="width:75px ;height: 10px; max-height: 100px;padding-top: 4px;margin-top: 5px" alt="Image"></div>
-    </div>
-    <div class="col-sm-6"> 
-      	
-      <div class="panel-body"><img src="img/textlogin.png" class="img-responsive" style="width:100% ; max-height: 100px;" alt="Image"></div>
-      <div class="panel-body img-loginfb"><img src="img/loginfb.png" class="img-responsive" style="width:100% ; max-height: 100px;" alt="Image"></div>  
-    </div>
-    <div class="col-sm-3"> 
-      <div class="panel panel-success">
-        <div class="panel-heading">BLACK FRIDAY DEAL</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+        <div class="col-sm-12 img-icon"><img src="img/icon.png" class="img-responsive" style="  max-width: 1050px; max-height: 600px;" alt="Image"></div>
       </div>
     </div>
   </div>
-</div><br>
+
+
+
+  <div class="container">    
+     <div class="row info ">
+
+      <div class="col-sm-6 tx-login"> 
+
+        <div class="panel-body"><img src="img/textlogin.png" class="img-responsive" style="width:100% ; max-height: 100px;" alt="Image"></div>
+        <div class="panel-body img-loginfb"><img src="img/loginfb.png" class="img-responsive" style="width:100% ; max-height: 100px;" alt="Image"></div>  
+      </div>
+
+      
+      <div class="col-sm-3 tx-thanhvien">
+
+        <h2>CÁC THÀNH VIÊN THAM GIA</h2>
+        
+        
+        <div class="avatar"></div>
+        <div class="avatar"></div>
+        <div class="avatar"></div>
+        <div class="avatar"></div>
+
+        <p>Trai xinh gái đẹp hội tụ quá trời nè!.</p>
+      </div>
+
+
+
+      <div class="col-sm-3 tx-hotline">
+
+        <h2>Hotline : 08 3547 2468</h2>
+        <p>email: user@texas.vn</p>
+        <a href="ww.texas.vn">ww.texas.vn</a>
+        <div><img src="img/daugach.png" class="img-responsive" style="width:75px ;height: 10px; max-height: 100px;padding-top: 4px;margin-top: 5px" alt="Image"></div>
+      </div>
+    </div>
+  </div><br>
+
 
 
 
