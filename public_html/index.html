@@ -200,10 +200,10 @@
         // [1] Load lên các thành phần cần thiết
         window.fbAsyncInit = function() {
             FB.init({
-                appId: '310302665968750',
+                appId: '197789620776556',
                 cookie: true,
                 xfbml: true,
-                version: 'v2.5'
+                version: 'v2.11'
             });
             // Kiểm tra trạng thái hiện tại
             FB.getLoginStatus(function(response) {
@@ -230,7 +230,7 @@
 
         // [3] Yêu cầu đăng nhập FB
         function RequestLoginFB() {
-            window.location = 'http://graph.facebook.com/oauth/authorize?client_id=310302665968750&scope=public_profile,email,user_likes&redirect_uri=http://webcuatoi.com';
+            window.location = 'http://graph.facebook.com/oauth/authorize?client_id=197789620776556&scope=public_profile,email,user_likes&redirect_uri=http://cb.saostar.vn';
         }
 
         // [4] Hiển thị nút đăng nhập
@@ -258,7 +258,7 @@
             if (d.getElementById(id)) return;
             js = d.createElement(s);
             js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7&appId=310302665968750";
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=197789620776556";
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
