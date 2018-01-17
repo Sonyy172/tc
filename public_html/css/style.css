@@ -1,0 +1,91 @@
+body {
+    background: url("../img/fail-background.png") no-repeat center center;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+header li {
+    display: inline-block;
+}
+
+
+/* header {
+    height: 10vh;
+} */
+
+nav {
+    height: 100%;
+}
+
+ul {
+    height: 100%;
+}
+
+li {
+    height: 100%;
+}
+
+
+/* li img {
+    height: 100%;
+} */
+
+li .logo-tc {
+    height: 100%;
+    width: auto !important;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    height: 100%;
+}
+
+.container img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container .rac-thinh-moi {
+    width: 50%;
+}
+
+.container .text-2 {
+    width: 50%;
+    padding-bottom: 14vh;
+}
+
+.header-left {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-right {
+    color: #fff;
+    text-decoration: none;
+}
+
+.block1 {
+    height: 8vh;
+}
+
+.block2 {
+    position: relative;
+    height: 30%;
+    padding-top: 5vh;
+}
+
+.block3 {
+    position: relative;
+    height: 30%;
+    padding-top: 3vh;
+}
+
+.block4 {
+    position: relative;
+    height: 30%;
+    padding-top: 3vh;
+}

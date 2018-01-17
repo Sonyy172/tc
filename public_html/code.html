@@ -10,66 +10,77 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
         /* Remove the navbar's default rounded borders and increase the bottom margin */
+
         /* Remove the jumbotron's default bottom margin */
-        
+
         .jumbotron {
+
             margin-bottom: 0;
             background-image: url(img/background.jpg);
             background-size: 100% 100%;
             background-color: white;
             position: relative;
-            padding-top: 20px!important;
+            padding-top: 20px !important;
         }
+
         /* Add a gray background color and some padding to the footer */
-        
+
         footer {
             background-color: #f2f2f2;
             padding: 25px;
         }
-        
+
         .cointainer {
             width: 1260px;
         }
-        
+
         .img-icon img {
             margin: 0 auto;
             width: 70%;
         }
-        
+
         .img-cointaner {
             position: relative;
         }
-        
+
         .img-loginfb {
             height: 115px;
         }
-        
+
         .tx-menu p {
+
             font-size: 28.394px;
             font-family: "UTM Avo";
             color: rgb(255, 254, 254);
             line-height: 1.2;
+
         }
-        
+
         .tx-hotline h2 {
+
             font-size: 23.333px;
             font-family: "UTM Avo";
             color: #262626;
             line-height: 1.2;
             text-align: left;
+
         }
-        
+
         .tx-hotline a,
         .tx-hotline p {
+
             font-size: 23.333px;
             font-family: "UTM Avo";
             color: #bababa;
             line-height: 1.2;
             text-align: left;
+
         }
-        
+
         .tx-thanhvien h2 {
+
             font-family: "UTM Avo";
+
             font-weight: bold;
             text-transform: uppercase;
             line-height: 1.2;
@@ -78,17 +89,22 @@
             color: #4e4e4e;
             line-height: 1.2;
             text-align: left;
+
         }
-        
+
         .tx-thanhvien a,
         .tx-thanhvien p {
+
             font-size: 23.333px;
             font-family: "UTM Avo";
             color: #bababa;
             line-height: 1.2;
             text-align: left;
+
         }
-        
+
+
+
         .avatar {
             border-style: solid;
             border-width: 2px;
@@ -102,11 +118,16 @@
             margin-right: 6px;
             margin-bottom: 6px;
         }
-        
+
+
+
+
+
         @media (min-width: 576px) {
             ...
         }
-        
+
+
         @media (min-width: 768px) {
             .tx-hotline {
                 padding-top: 65px;
@@ -123,6 +144,7 @@
             .tx-hotline {
                 position: absolute;
                 left: 0px;
+
             }
             .tx-thanhvien {
                 position: absolute;
@@ -134,7 +156,8 @@
                 transform: translateX(-50%);
             }
         }
-        
+
+
         @media only screen and (min-width: 1200px) {
             .tx-hotline {
                 padding-top: 65px;
@@ -151,6 +174,7 @@
             .tx-hotline {
                 position: absolute;
                 left: 0px;
+
             }
             .tx-thanhvien {
                 position: absolute;
@@ -162,7 +186,8 @@
                 transform: translateX(-50%);
             }
         }
-        
+
+
         @media only screen and (min-width: 992px) {
             .tx-hotline {
                 padding-top: 65px;
@@ -179,6 +204,7 @@
             .tx-hotline {
                 position: absolute;
                 left: 0px;
+
             }
             .tx-thanhvien {
                 position: absolute;
@@ -192,87 +218,9 @@
         }
     </style>
 
-
 </head>
 
 <body>
-    <script>
-        // [1] Load lên các thành phần cần thiết
-        window.fbAsyncInit = function() {
-            FB.init({
-                appId: '197789620776556',
-                cookie: true,
-                xfbml: true,
-                version: 'v2.11'
-            });
-            // Kiểm tra trạng thái hiện tại
-            FB.getLoginStatus(function(response) {
-                statusChangeCallback(response);
-            });
-
-        };
-
-        // [2] Xử lý trạng thái đăng nhập
-        function statusChangeCallback(response) {
-            // Người dùng đã đăng nhập FB và đã đăng nhập vào ứng dụng
-            if (response.status === 'connected') {
-                ShowWelcome();
-            }
-            // Người dùng đã đăng nhập FB nhưng chưa đăng nhập ứng dụng
-            else if (response.status === 'not_authorized') {
-                ShowLoginButton();
-            }
-            // Người dùng chưa đăng nhập FB
-            else {
-                ShowLoginButton();
-            }
-        }
-
-        // [3] Yêu cầu đăng nhập FB
-        function RequestLoginFB() {
-            window.location = 'http://graph.facebook.com/oauth/authorize?client_id=197789620776556&scope=public_profile,email,user_likes&redirect_uri=http://cb.saostar.vn';
-        }
-
-        // [4] Hiển thị nút đăng nhập
-        function ShowLoginButton() {
-            document.getElementById('btb').setAttribute('style', 'display:block');
-            document.getElementById('lbl').setAttribute('style', 'display:none');
-        }
-
-        // [5] Chào mừng người dùng đã đăng nhập
-        function ShowWelcome() {
-            document.getElementById('btb').setAttribute('style', 'display:none');
-            FB.api('/me', function(response) {
-                var name = response.name;
-                var username = response.username;
-                var id = response.id;
-                document.getElementById('lbl').innerHTML = 'Tên=' + name + ' | username=' + username + ' | id=' + id;
-                document.getElementById('lbl').setAttribute('style', 'display:block');
-            });
-        }
-
-        /* function logout() {
-            FB.logout(function(response) {
-                // Person is now logged out
-            });
-        } */
-    </script>
-    <div id="fb-root"></div>
-    <script>
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=197789620776556";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-
-    <input id="btb" type="button" value="ĐĂNG NHẬP" onclick="RequestLoginFB()" style="display:none" />
-    <p id="lbl" style="display:none">BẠN ĐÃ ĐĂNG NHẬP THÀNH CÔNG!</p>
-
-    <br />
 
     <div class="jumbotron">
         <div class="container text-center ">
@@ -303,7 +251,7 @@
             <div class="col-sm-6 tx-login">
 
                 <div class="panel-body"><img src="img/textlogin.png" class="img-responsive" style="width:100% ; max-height: 100px;" alt="Image"></div>
-                <div class="panel-body img-loginfb" onclick="RequestLoginFB()"><img src="img/loginfb.png" class="img-responsive" style="width:100% ; max-height: 100px;" alt="Image"></div>
+                <div class="panel-body img-loginfb"><img src="img/loginfb.png" class="img-responsive" style="width:100% ; max-height: 100px;" alt="Image"></div>
             </div>
 
 
